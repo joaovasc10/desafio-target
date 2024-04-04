@@ -1,5 +1,9 @@
 function inverterString(str) {
-    return str.split('').reverse().join('');
+    let invertedString = '';
+    for (let i = str.length - 1; i >= 0; i--) {
+        invertedString += str[i];
+    }
+    return invertedString;
 }
 
 // Exemplo de uso
